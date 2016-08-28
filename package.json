@@ -1,0 +1,28 @@
+{
+  "name": "svg-symbols",
+  "version": "1.0.0",
+  "description": "svg图形加载",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gxiaobang/svg-symbols.git"
+  },
+  "keywords": [
+    "svg",
+    "symbols"
+  ],
+  "author": "gxiaobang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gxiaobang/svg-symbols/issues"
+  },
+  "homepage": "https://github.com/gxiaobang/svg-symbols#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-svg-symbols": "^2.0.0"
+  }
+}

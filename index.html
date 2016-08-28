@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>svg测试</title>
+	<style>
+		.icon {
+			width: 16px;
+			height: 16px;
+			/*fill: black;*/
+		}
+	</style>
+	<script src="./assets/js/svgSymbols.js"></script>
+</head>
+<body>
+	
+	<script>
+		// 加载图标
+		svgSymbols.load('./build/svg/svg-symbols.svg');
+		svgSymbols.done((svg) => {
+			// console.log(svg);
+			var symbols = svg.querySelectorAll('symbol');
+			var ul = document.createElement('ul');
+			var html = '';
+			for (let i = 0; i < symbols.length; i++) {
+				html += `<li>
+									<svg class="icon">
+										<use xlink:href="#${symbols[i].id}"></use>
+									</svg>
+									${symbols[i].id}
+								</li>`;
+			}
+			ul.innerHTML = html;
+			document.body.insertBefore(ul, document.body.firstChild);
+		});
+	</script>
+</body>
+</html>
