@@ -38,5 +38,12 @@ svgSymbols.done(svg => {
 });
 ```
 
+#### 在页面使用图标，dom格式如下
+```html
+<svg class="icon">
+	<use xlink:href="#home"></use>
+</svg>
+```
+`xlink:href`指定要使用的图标，这里我用`home`图标为例
 
 #### 首次加载是通过ajax去请求svg文件，然后会保存在`localStorage`的`#svg-symbols`。后面都会去读取`localStorage`，速度有了显著的提升。
