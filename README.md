@@ -46,4 +46,15 @@ svgSymbols.done(svg => {
 ```
 `xlink:href`指定要使用的图标，这里我用`home`图标为例
 
+
+### 通过样式修改图标大小、颜色
+```css
+.icon {
+	width: 32px;
+	height: 32px;
+	fill: black;		/* svg图标填充色 */
+}
+```
+svg图标跟字体图标改变`font-size`、'color'明显区别，毕竟是当成图形来设置
+
 #### 首次加载是通过ajax去请求svg文件，然后会保存在`localStorage`的`#svg-symbols`。后面都会去读取`localStorage`，速度有了显著的提升。
