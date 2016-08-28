@@ -55,6 +55,12 @@ svgSymbols.done(svg => {
 	fill: black;		/* svg图标填充色 */
 }
 ```
-svg图标跟字体图标改变`font-size`、'color'明显区别，毕竟是当成图形来设置
+svg图标跟字体图标改变`font-size`、'color'去修改大小颜色有明显区别，毕竟是当成图形来设置。
 
 #### 首次加载是通过ajax去请求svg文件，然后会保存在`localStorage`的`#svg-symbols`。后面都会去读取`localStorage`，速度有了显著的提升。
+
+
+### 参考链接
+[https://isux.tencent.com/16292.html](https://isux.tencent.com/16292.html)
+
+[http://www.zhangxinxu.com/wordpress/2014/07/introduce-svg-sprite-technology/](http://www.zhangxinxu.com/wordpress/2014/07/introduce-svg-sprite-technology/)
