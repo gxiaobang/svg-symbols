@@ -1,10 +1,11 @@
 /**
- * svg图形导入
+ * svg图标加载
  * @author gxiaobang
  * @version 1.0.0
  */
 
 var svgSymbols = {
+	// 开启debug将不进行缓存
 	isDebug: false,
 	// 本地保存key
 	key: '#svg-symbols',

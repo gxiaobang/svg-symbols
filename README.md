@@ -1,6 +1,6 @@
 # svg-symbols
 
-## svg图形加载
+## svg图标加载
 
 ### 准备工作：1.搭建服务器环境（静态） 2.把需要的svg小图标合并成到一个svg文件
 
@@ -10,7 +10,7 @@ $npm install
 ```
 安装`package.json`需要的依赖包，需要稍等片刻
 
-#### 设计师提供的视觉原稿photoshop, 把图标截取下来，保存成svg格式（有事例，可以跳过这一步）
+#### 设计师提供的photoshop视觉原稿, 把图标截取下来，保存成svg格式（有事例，可以跳过这一步）
 然后执行gulp任务
 ```bash
 $gulp sprite
@@ -44,7 +44,7 @@ svgSymbols.done(svg => {
 	<use xlink:href="#home"></use>
 </svg>
 ```
-`xlink:href`指定要使用的图标，这里我用`home`图标为例
+`xlink:href`指定要使用的图标，这里用`home`图标为例
 
 
 #### 通过样式修改图标大小、颜色
@@ -55,9 +55,9 @@ svgSymbols.done(svg => {
 	fill: black;		/* svg图标填充色 */
 }
 ```
-svg图标跟字体图标改变`font-size`、`color`去修改大小颜色有明显区别，毕竟是当成图形来设置。
+svg图标跟字体图标改变`color`、`font-size`去修改颜色大小有明显区别，毕竟是当成图形来设置。
 
-#### 首次加载是通过ajax去请求svg文件，然后会保存在`localStorage`的`#svg-symbols`。后面都会去读取`localStorage`，在加载速度上有明显的提升。
+#### 首次加载是通过ajax去请求svg文件，然后会保存在`localStorage`的`#svg-symbols`。接下来的加载会先去读取`localStorage`，能够明显的看到在加载速度上的提升。
 
 
 ### 参考链接
